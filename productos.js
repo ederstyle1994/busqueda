@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 function buscarDatos(captura){
     let ruta_imagenes = "http://localhost/busqueda/imagenes/";
-    let url = "http://localhost/busqueda/backend.php?opcion=buscar";
+    let url = "http://localhost/busqueda/buscar/";
     $.ajax({
         url: url,
         method: 'POST',

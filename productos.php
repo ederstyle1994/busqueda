@@ -23,6 +23,6 @@
     <ul id="filtrado">
     </ul>
 
-    <script src="productos.js"></script>
+    <script src="http://localhost/busqueda/productos.js"></script>
 </body>
 </html>

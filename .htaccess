@@ -1,0 +1,6 @@
+RewriteEngine On
+#RewriteRule ^(.*)$ http://www.nueva.com/$1 [R=301,L]
+
+RewriteRule ^$ %{ENV:REWRITEBASE}productos.php [L]
+RewriteRule ^listadoproductos/$ %{ENV:REWRITEBASE}productos.php [L]
+RewriteRule ^buscar/$ %{ENV:REWRITEBASE}backend.php?opcion=buscar [L]
