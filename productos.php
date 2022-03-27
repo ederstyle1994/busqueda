@@ -15,7 +15,7 @@
 </head>
 <body>
     
-    <form action="" method="get">
+    <form action="" method="get" autocomplete="off">
         <input type="search" id="search">
         <button type="submit">Search</button>
     </form>

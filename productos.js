@@ -10,7 +10,7 @@ $(document).ready(function () {
 })
 
 function buscarDatos(captura){
-    let url = "http://localhost/BusquedaDB/backend.php?opcion=buscar";
+    let url = "http://localhost/busqueda/backend.php?opcion=buscar";
     $.ajax({
         url: url,
         method: 'POST',
