@@ -38,7 +38,12 @@ function buscarDatos(captura){
                 }
             }
             else{
-                producto += `<li>No se encontraron productos</li>`;
+                if (captura == '') {
+                    producto = ''
+                }
+                else{
+                    producto += `<li>No se encontraron productos</li>`
+                }
             }
             ul.innerHTML = producto;
         },
