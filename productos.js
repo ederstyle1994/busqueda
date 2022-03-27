@@ -26,14 +26,19 @@ function buscarDatos(captura){
 
         },
         success: function(datos){
-            // console.log(datos);
+            console.log(datos);
             let ul = document.getElementById('filtrado');
             let producto = '';
-            for (let i = 0; i < datos.length; i++) {
-                producto += `
-                <li>${datos[i].nombre}</li>
-                <img src='${ruta_imagenes}${datos[i].idproductos}.jpg' width='100px'/>
-                `
+            if(datos.length > 0){
+                for (let i = 0; i < datos.length; i++) {
+                    producto += `
+                    <li>${datos[i].nombre}</li>
+                    <img src='${ruta_imagenes}${datos[i].idproductos}.jpg' width='100px'/>
+                    `
+                }
+            }
+            else{
+                producto += `<li>No se encontraron productos</li>`;
             }
             ul.innerHTML = producto;
         },
