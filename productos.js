@@ -10,6 +10,7 @@ $(document).ready(function () {
 })
 
 function buscarDatos(captura){
+    let ruta_imagenes = "http://localhost/busqueda/imagenes/";
     let url = "http://localhost/busqueda/backend.php?opcion=buscar";
     $.ajax({
         url: url,
@@ -31,6 +32,7 @@ function buscarDatos(captura){
             for (let i = 0; i < datos.length; i++) {
                 producto += `
                 <li>${datos[i].nombre}</li>
+                <img src='${ruta_imagenes}${datos[i].idproductos}.jpg' width='100px'/>
                 `
             }
             ul.innerHTML = producto;
