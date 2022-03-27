@@ -3,4 +3,4 @@ RewriteEngine On
 
 RewriteRule ^$ %{ENV:REWRITEBASE}productos.php [L]
 RewriteRule ^listadoproductos/$ %{ENV:REWRITEBASE}productos.php [L]
-RewriteRule ^buscar/$ %{ENV:REWRITEBASE}backend.php?opcion=buscar [L]
+RewriteRule ^buscar/$ %{ENV:REWRITEBASE}index.php?mostrar=producto&opcion=buscar [L]
