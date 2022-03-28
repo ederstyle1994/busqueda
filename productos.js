@@ -26,7 +26,7 @@ function buscarDatos(captura){
 
         },
         success: function(datos){
-            console.log(datos);
+            // console.log(datos);
             let ul = document.getElementById('filtrado');
             let producto = '';
             if(datos.length > 0){
@@ -52,20 +52,6 @@ function buscarDatos(captura){
         }
     })
 }
-
-
-
-
-
-
-
-
-
-
-console.log('akjsbnd')
-
-
-
 
 
 
