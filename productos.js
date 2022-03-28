@@ -30,7 +30,7 @@ function buscarDatos(captura){
             let producto = '';
             for (let i = 0; i < datos.length; i++) {
                 producto += `
-                <li>${datos[i].Nombre}</li>
+                <li>${datos[i].nombre}</li>
                 `
             }
             ul.innerHTML = producto;

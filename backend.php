@@ -11,7 +11,7 @@
             // $palabra = str_split($palabra);
             // $palabra = implode("-", $palabra);
             // $sql = "SELECT * FROM ferreteria.productos WHERE Nombre LIKE '%".$palabra."%';";
-            $sql = "SELECT * FROM ferreteria.productos WHERE Nombre LIKE '%".$palabra."%';";
+            $sql = "SELECT * FROM comercial.productos WHERE Nombre LIKE '%".$palabra."%';";
             $resultado = $conexion->query($sql);
             $productos = array();
             // $resultado = $resultado->num_rows;

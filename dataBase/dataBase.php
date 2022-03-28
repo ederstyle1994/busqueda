@@ -2,7 +2,7 @@
     $servidor = "localhost";
     $usuario = "root";
     $password ="";
-    $nameBd = "ferreteria";
+    $nameBd = "comercial";
 
     $conexion = new mysqli($servidor, $usuario, $password, $nameBd);
 
