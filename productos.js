@@ -50,8 +50,7 @@ function buscarDatos(captura){
 
 
 
-
-
+console.log('akjsbnd')
 
 
 
