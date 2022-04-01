@@ -15,8 +15,8 @@
 </head>
 <body>
     
-    <form action="" method="get" autocomplete="off">
-        <input type="search" id="search">
+    <form action="resultado.php" method="POST" autocomplete="off" target="_blank">
+        <input type="search" id="search" name="search">
         <button type="submit">Search</button>
     </form>
 

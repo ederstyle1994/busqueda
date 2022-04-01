@@ -1,4 +1,5 @@
 <?php
+    define("RUTA_IMAGENES", "http://".$_SERVER["HTTP_HOST"]."/busqueda/imagenes/");
     $servidor = "localhost";
     $usuario = "root";
     $password ="";
